@@ -1,0 +1,33 @@
+.inputCard {
+  width: min(40rem, 85%);
+  height: 18rem;
+  border-radius: 1.2rem;
+  padding: 3rem 2rem;
+  margin: 0 auto 4rem;
+
+  background-color: var(--color-input-card);
+  background-image: url("../../assets/images/bg-boost-mobile.svg");
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  input {
+    border: 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    outline-color: var(--color-background-footer);
+  }
+
+  button {
+    padding: 1rem 0;
+    border: 0;
+    border-radius: 0.5rem;
+    background: var(--color-primary-blue);
+    color: #FFF;
+    font-size: 2rem;
+
+    cursor: pointer;
+  }
+}

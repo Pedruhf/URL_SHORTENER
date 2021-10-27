@@ -1,0 +1,49 @@
+.urlCard {
+  width: min(74rem, 85%);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  margin: 0 auto 4rem;
+
+  background-color: #FFF;
+
+  display: flex;
+  flex-direction: column;
+
+  .urlToShorten {
+    font-size: 2rem;
+    color: #141414;
+    text-decoration: none;
+    word-break: break-word;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  hr {
+    margin: 1rem 0;
+  }
+
+  .shortenedUrl {
+    font-size: 2rem;
+    color: var(--color-primary-blue);
+    word-break: break-word;
+    margin-bottom: 2rem;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  button {
+    padding: 1rem 0;
+    border: 0;
+    border-radius: 0.5rem;
+    background: var(--color-primary-blue);
+    color: #FFF;
+    font-size: 2rem;
+
+    cursor: pointer;
+  }
+}
