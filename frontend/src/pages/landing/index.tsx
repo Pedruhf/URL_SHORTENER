@@ -17,14 +17,14 @@ const LandingPage = () => {
         <h1>More than just shorter links</h1>
         <span>Build your brand's recognition and get detailed insights on how your links are performing</span>
 
-        <button>Get Started</button>
+        <button>Começar</button>
       </div>
 
       <div className="visualIdentityDesktop">
         <div className="information">
-          <h1>More than just<br/>shorter links</h1>
-          <span>Build your brand's recognition and get detailed<br/>insights on how your links are performing</span>
-          <button>Get Started</button>
+          <h1>Mais do que apenas<br/>links mais curtos</h1>
+          <span>Construa o reconhecimento da sua marca e obtenha<br/>detalhes sobre o desempenho de seus links</span>
+          <button>Começar</button>
         </div>
 
         <img src={ilustrationWorking} alt="Working" />

@@ -8,25 +8,25 @@ const Footer = () => {
       <h1>Shortly</h1>
 
       <div className="features">
-        <strong>Features</strong>
-        <p>Link Shortening</p>
-        <p>Branded Links</p>
-        <p>Analytics</p>
+        <strong>Características</strong>
+        <p>Encurtamento de link</p>
+        <p>Links da sua marca</p>
+        <p>Análises</p>
       </div>
 
       <div className="resources">
-      <strong>Resources</strong>
+      <strong>Recursos</strong>
         <p>Blog</p>
-        <p>Developers</p>
-        <p>Support</p>
+        <p>Desenvolvedores</p>
+        <p>Suporte</p>
       </div>
 
       <div className="company">
-      <strong>Company</strong>
-        <p>About</p>
-        <p>Our Team</p>
-        <p>Careers</p>
-        <p>Contact</p>
+      <strong>Compania</strong>
+        <p>Sobre</p>
+        <p>Nosso Time</p>
+        <p>Carreiras</p>
+        <p>Contato</p>
       </div>
 
       <div className="socials">

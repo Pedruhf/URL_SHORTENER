@@ -24,7 +24,7 @@ const InputCard = () => {
         onChange={event => { setInputValue(event.target.value) }}
       />
 
-      <button onClick={handleInput}>Shorten it!</button>
+      <button onClick={handleInput}>Encurtar</button>
     </div>
   );
 };
