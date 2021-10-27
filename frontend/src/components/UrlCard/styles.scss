@@ -1,5 +1,5 @@
-.urlCard {
-  width: min(74rem, 85%);
+.mobile {
+  width: min(100rem, 85%);
   border-radius: 1.2rem;
   padding: 2rem;
   margin: 0 auto 4rem;
@@ -13,7 +13,7 @@
     font-size: 2rem;
     color: #141414;
     text-decoration: none;
-    word-break: break-word;
+    word-break: break-all;
 
     &:hover {
       text-decoration: underline;
@@ -27,7 +27,7 @@
   .shortenedUrl {
     font-size: 2rem;
     color: var(--color-primary-blue);
-    word-break: break-word;
+    word-break: break-all;
     margin-bottom: 2rem;
     text-decoration: none;
 
@@ -45,5 +45,89 @@
     font-size: 2rem;
 
     cursor: pointer;
+
+    transition: filter 0.4s;
+
+    &:hover {
+      filter: brightness(0.92);
+    }
+  }
+}
+
+.desktop {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: min(100rem, 85%);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  margin: 0 auto 4rem;
+
+  background-color: #FFF;
+
+  .urlToShorten {
+    max-width: 60%;
+    font-size: 2rem;
+    color: #141414;
+    text-decoration: none;
+    word-break: break-all;
+    text-align: left;
+    align-self: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .newUrl {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+
+    .shortenedUrl {
+      font-size: 2rem;
+      color: var(--color-primary-blue);
+      word-break: break-all;
+      text-decoration: none;
+      text-align: right;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    button {
+      min-width: 10rem;
+      padding: 1rem 0;
+      border: 0;
+      border-radius: 0.5rem;
+      background: var(--color-primary-blue);
+      color: #FFF;
+      font-size: 2rem;
+  
+      cursor: pointer;
+
+      transition: filter 0.4s;
+
+      &:hover {
+        filter: brightness(0.92);
+      }
+    }
+  }
+
+  
+
+  
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    
+    display: flex;
   }
 }

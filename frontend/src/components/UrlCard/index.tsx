@@ -10,13 +10,20 @@ interface UrlCardProps {
 const UrlCard: React.FC<UrlCardProps> = ({ url, shortenedURL}) => {
   return (
     <div className="urlCard">
-      <a target="_blank" href={url} className="urlToShorten">{url}</a>
+      <div className="mobile">
+        <a target="_blank" href={url} className="urlToShorten">{url}</a>
+        <hr />
+        <a target="_blank" href={shortenedURL} className="shortenedUrl">{shortenedURL}</a>
+        <button>Copy</button>
+      </div>
 
-      <hr />
-
-      <a target="_blank" href={shortenedURL} className="shortenedUrl">{shortenedURL}</a>
-
-      <button>Copy</button>
+      <div className="desktop">
+        <a target="_blank" href={url} className="urlToShorten">{url}</a>
+        <div className="newUrl">
+          <a target="_blank" href={shortenedURL} className="shortenedUrl">{shortenedURL}</a>
+          <button>Copy</button>
+        </div>
+      </div>
     </div>
   );
 };

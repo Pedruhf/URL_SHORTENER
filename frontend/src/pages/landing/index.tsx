@@ -11,11 +11,23 @@ const LandingPage = () => {
 
   return (
     <div className="landingPage">
-      <div className="visualIdentity">
+      <div className="visualIdentityMobile">
         <img src={ilustrationWorking} alt="Working" />
+
         <h1>More than just shorter links</h1>
         <span>Build your brand's recognition and get detailed insights on how your links are performing</span>
+
         <button>Get Started</button>
+      </div>
+
+      <div className="visualIdentityDesktop">
+        <div className="information">
+          <h1>More than just<br/>shorter links</h1>
+          <span>Build your brand's recognition and get detailed<br/>insights on how your links are performing</span>
+          <button>Get Started</button>
+        </div>
+
+        <img src={ilustrationWorking} alt="Working" />
       </div>
 
       <InputCard />

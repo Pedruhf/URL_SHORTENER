@@ -33,9 +33,15 @@ footer {
   p {
     font-size: 1.5rem;
     color: var(--color-light-gray);
+    cursor: pointer;
+    transition: color 0.4s;
     
     + p {
       margin-top: 0.75rem;
+    }
+
+    &:hover {
+      color: var(--color-primary-blue);
     }
   }
 }
@@ -43,9 +49,36 @@ footer {
 .socials {
   svg {
     color: #FFF;
+    cursor: pointer;
+    transition: color 0.4s;
 
     + svg {
       margin-left: 2.5rem;
     }
+
+    &:hover {
+      color: var(--color-primary-blue);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+
+    h1 {
+      align-self: flex-start;
+    }
+  }
+  
+  .features,
+  .resources,
+  .company {
+    align-self: flex-start;
+  }
+
+  .socials {
+    align-self: flex-start;
   }
 }

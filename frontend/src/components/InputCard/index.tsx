@@ -19,6 +19,7 @@ const InputCard = () => {
       <input
         type="text"
         name="url"
+        placeholder="Digite a URL que deseja encurtar..."
         value={inputValue}
         onChange={event => { setInputValue(event.target.value) }}
       />

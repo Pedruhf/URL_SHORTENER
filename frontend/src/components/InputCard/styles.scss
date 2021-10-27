@@ -1,5 +1,5 @@
 .inputCard {
-  width: min(40rem, 85%);
+  width: min(100rem, 85%);
   height: 18rem;
   border-radius: 1.2rem;
   padding: 3rem 2rem;
@@ -29,5 +29,41 @@
     font-size: 2rem;
 
     cursor: pointer;
+
+    transition: filter 0.4s;
+
+    &:hover {
+      filter: brightness(0.92);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .inputCard {
+    height: 12rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/images/bg-boost-desktop.svg");
+  }
+
+  input {
+    width: 75%;
+    height: 5rem;
+    
+  }
+
+  button {
+    width: 20%;
+    padding: 1rem 0;
+    border: 0;
+    border-radius: 0.5rem;
+    margin-left: 2rem;
+
+    transition: filter 0.4s;
+
+    &:hover {
+      filter: brightness(0.92);
+    }
   }
 }
