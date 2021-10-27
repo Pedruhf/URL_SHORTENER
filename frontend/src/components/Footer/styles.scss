@@ -47,17 +47,19 @@ footer {
 }
 
 .socials {
-  svg {
-    color: #FFF;
-    cursor: pointer;
-    transition: color 0.4s;
-
-    + svg {
-      margin-left: 2.5rem;
+  a {
+    svg {
+      color: #FFF;
+      cursor: pointer;
+      transition: color 0.4s;
+  
+      &:hover {
+        color: var(--color-primary-blue);
+      }
     }
 
-    &:hover {
-      color: var(--color-primary-blue);
+    + a {
+      margin-left: 2.5rem;
     }
   }
 }

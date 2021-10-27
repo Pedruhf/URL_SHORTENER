@@ -1,6 +1,6 @@
 import "./styles.scss";
 
-import { BsFacebook, BsTwitter, BsPinterest, BsInstagram } from "react-icons/bs";
+import { BsGithub, BsLinkedin , BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -30,10 +30,9 @@ const Footer = () => {
       </div>
 
       <div className="socials">
-        <BsFacebook size="24" />
-        <BsTwitter size="24" />
-        <BsPinterest size="24" />
-        <BsInstagram size="24" />
+        <a target="_blank" href="https://github.com/pedruhf"><BsGithub size="24" /></a>
+        <a target="_blank" href="https://www.linkedin.com/in/pedruhf"><BsLinkedin size="24" /></a>
+        <a target="_blank" href="https://www.instagram.com/pedruhf"><BsInstagram size="24" /></a>
       </div>
     </footer>
   );
