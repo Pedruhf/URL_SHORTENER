@@ -1,0 +1,44 @@
+.visualIdentity {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 1.5rem;
+  margin-bottom: 10rem;
+
+
+  img {
+    width: 100%;
+    position: relative;
+    right: -10rem;
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-background-footer);
+  }
+
+  span {
+    font-size: 2rem;
+    color: var(--color-lighter-gray);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  button {
+    padding: 1.5rem 3rem;
+    border: 0;
+    border-radius: 3rem;
+
+    font-size: 2.5rem;
+    color: #FFF;
+
+    background: var(--color-primary-blue);
+    cursor: pointer;
+  }
+}

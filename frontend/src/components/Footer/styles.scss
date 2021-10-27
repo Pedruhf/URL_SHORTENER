@@ -1,0 +1,51 @@
+footer {
+  width: 100%;
+  padding: 5rem;
+
+  background: var(--color-background-footer);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 3rem;
+    color: #FFF;
+    margin-bottom: 4rem;
+  }
+}
+
+.features,
+.resources,
+.company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+
+  strong {
+    font-size: 1.6rem;
+    color: #FFF;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: var(--color-light-gray);
+    
+    + p {
+      margin-top: 0.75rem;
+    }
+  }
+}
+
+.socials {
+  svg {
+    color: #FFF;
+
+    + svg {
+      margin-left: 2.5rem;
+    }
+  }
+}

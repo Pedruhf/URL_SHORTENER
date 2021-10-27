@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-background-light: #FAFAFA;
+  --color-background-footer: #24142c;
+  --color-light-gray: #AAA;
+  --color-lighter-gray: #B0B0B0;
+  --color-primary-blue: #2ccccc;
+
+  font-size: 62.5%;
+}
+
+html, body, #root {
+  height: 100vh;
+}
+
+body {
+  background: var(--color-background-light);
+  font-family: Archivo, sans-serif;
+}
+
